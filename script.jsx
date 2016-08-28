@@ -15,14 +15,14 @@ var Hello = React.createClass({
   render: function(){
     return (
       <div>
-        Hello {this.props.name}.  React is cool.
+        {this.props.name}.  I was born on {this.props.dob}.
       </div>
     )
   }
 });
 // React.render(<Hello name="Joe"/>, document.getElementById("root"));
 
-var ThreeHellos = React.createClass({
+var ThreeHello = React.createClass({
   render: function(){
     return (
       <div>
@@ -33,4 +33,17 @@ var ThreeHellos = React.createClass({
     )
   }
 });
-React.render(<ThreeHellos/>, document.getElementById("root"));
+ // React.render(<ThreeHellos/>, document.getElementById("root"));
+
+var ThreeHelloDob = React.createClass({
+  render: function(){
+    return (
+      <div>
+        <Hello name="Karl" dob='12/2/1960'/>
+        <Hello name="David" dob='11/12/1957'/>
+        <Hello name="Jim" dob='6/30/1964'/>
+      </div>
+    )
+  }
+});
+React.render(<ThreeHelloDob/>, document.getElementById("root"));
