@@ -1,17 +1,16 @@
 
 
-var react = require('react');
-var reactdom = require('react-dom');
+// var react = require('react');
+// var reactdom = require('react-dom');
 
-
-var HelloWorld = React.createClass({
+var Hello = React.createClass({
   render: function(){
     return (
       <div>
-        Hello World!
+        Hello World!!!!!!
       </div>
     )
   }
 });
 
-React.render(<HelloWorld/>,document.getElementById("root"));
+React.render(<Hello/>, document.getElementById("root"));
