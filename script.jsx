@@ -11,11 +11,24 @@
 //
 // React.render(<Hello/>, document.getElementById("root"));
 
+// Date.age_by_year(start_age, end_age){
+//   var d1 = new Date(start_age);
+//   var d2 = new Date(end_age);
+//
+//
+//   var i1 = Year(d1);
+//   var i2 = Year(d2);
+//   return i2 - i1;
+// }
+
+var xxx = 888;
+
 var Hello = React.createClass({
+
   render: function(){
     return (
       <div>
-        {this.props.name}.  I was born on {this.props.dob}.
+        {this.props.name}.  I was born on {this.props.dob} ({xxx} years old).
       </div>
     )
   }
